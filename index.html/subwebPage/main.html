@@ -1,0 +1,2212 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>女性力量</title>
+	<link href="css/css.css" rel="stylesheet">
+	<script src="js/echarts.min.js"></script>
+</head>
+
+<body class="background">
+	<!--首页设计-->
+	<div class="back">
+		<div class="img">
+			<div class="left">
+				<img class="left" src="img/打破旧见.png" alt="">
+			</div>
+			<div class="right">
+				<img class="right" src="img/“她力量”.png" alt="">
+			</div>
+			 <p class="text">新中国成立以来，从“夫为妻纲”到“妇女能顶半边天”，性别理念的转变为我国妇女解放运动提供了思想支持，推动了我国女性不断解放，从思想层面的觉悟到社会主义现代化建设再到展现多元、多维的女性形象，传播新时代女性的主体价值。
+			</p>
+		</div>
+			<!--菜单导航-->
+		<div class="btns-bg">
+			<div class="PlayEy"></div>
+			<div class="Btn"></div>
+			<div class="Play">
+				<audio id="audios" src="music/MrChip-栀月.mp3"></audio>
+			</div>
+			<script src="js/script-music.js"></script>
+		</div>
+		<nav class="navbar">
+			 <ul>
+				<li><a href="#pageOne">
+					<img src="img/page1.png" alt="导航"> </a>
+				 </li>
+				<li><a href="#pageTwo">
+					<img src="img/page2.png" alt="导航"></a>
+				 </li>
+				<li><a href="#pageThree">
+					<img src="img/page3.png" alt="导航"></a>
+				 </li>
+			</ul>
+		</nav>
+		<!--女性力量-->
+		<div class="power">
+			<a id="pageOne"></a>
+			<div class="pictureOne">
+			</div>
+			<div class="topText">近年来，有思想、有智慧、有担当的女性个体形象频频出现在大银幕，女性的内心活动得以展示，在引起了女性共鸣的同时，也引发了与广大女性对新时代女性在思想感情、个人发展上的思考。
+			</div>
+			<ul>
+				<li class="firstLabel-One">
+					<span class="ability">面对婚恋</span>
+				</li>
+			</ul>
+			<p class="textOne">在中国的婚恋市场里，女性面临着所谓“30岁”门槛，随着年龄增加，来自亲朋好友的催婚压力也与日俱增。女性在面对感情上能够理性面对，以独立、自信、成熟的姿态面对压力。
+			</p>
+			<h1>如何面对父母家人的催婚？</h1>
+			<div id="chart1-1" class="chart">
+			</div>
+			<h1>如何面对分手？</h1>
+			<div id="chart1-2" class="chart"></div>
+				<script>
+					// 基于准备好的dom，初始化echarts实例
+					var myChart = echarts.init(document.getElementById('chart1-1'));
+
+					// 指定图表的配置项和数据
+				var option;
+							option = {
+					title:[{
+						subtext:'数据来源：珍爱网《2021女性力量调查》',
+						left:'center',
+						top:'540px',
+	}],
+					legend:{
+						bottom:'30px',
+					},
+					toolbox: {
+						show: true,
+						feature: {
+							dataZoom: {
+							yAxisIndex: 'none'
+								},
+							dataView: {readOnly: false},
+							magicType: {type: ['line', 'bar']},
+							restore: {show:true},
+							saveAsImage: {show:true}
+						}
+				},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+								type: 'cross',
+					crossStyle: {
+						color: '#999'
+					}
+						}
+				},
+				grid: {
+					left: '3%',
+					right: '7%',
+					bottom: '12%',
+					containLabel: true
+				},
+			   yAxis: {
+					type: 'category',
+					data: ['会应付式的相亲来搪塞', '无动于衷，当耳旁风', '变得焦虑，急于找对象', '不盲目冲动，积极主动脱单', '理性面对，正视感情需求'
+			]
+				},
+				xAxis: {
+					type: 'value',
+					name:'单位：%'
+				},
+				series: [{
+					data: [{
+            value: 3.55,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        },{
+            value: 7.27 ,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        },{
+            value: 9.26,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 33.67,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        },{
+            value: 67.78,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        },],
+					type: 'bar',
+					color: '#cc3366',
+
+				}]
+			};
+					 myChart.setOption(option);
+						</script>
+
+				<script>
+				var myChart = echarts.init(document.getElementById('chart1-2'));
+						var option;
+							option = {
+							tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+								type: 'cross',
+					crossStyle: {
+						color: '#999'
+					}
+						}
+				},
+							title:[{
+		subtext:'数据来源：珍爱网《2021女性力量调查》',
+		left:'center',
+		bottom:'30px',
+	}],
+					toolbox: {
+				show: true,
+				feature: {
+					dataZoom: {
+						yAxisIndex: 'none'
+					},
+					dataView: {readOnly: false},
+					magicType: {type: ['line', 'bar']},
+					restore: {},
+					saveAsImage: {}
+				}
+			},
+
+
+			grid: {
+				left: '3%',
+				right: '7%',
+				bottom: '14%',
+				containLabel: true
+			},
+		   yAxis: {
+				type: 'category',
+				data: ['放纵自己，不再相信爱情','沉浸在悲伤中不能自拔','自责，自我怀疑', '与家人/好友相伴，走出悲伤', '扩大交友群，结交新朋友', '出门旅行，放空自己', '理性对待，快速发泄后调整自己','精力转移，拖入到工作事业中'
+		]
+			},
+			xAxis: {
+				type: 'value',
+				name:'单位：%'
+			},
+			series: [{
+				data: [{
+            value: 3.32,
+            itemStyle: {
+                color: '#5470c6'
+            }
+					
+        }, {
+            value: 11.31,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 16.64,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 25.01,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 31.84,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 31.84,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 59.62,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 61.06,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, ],
+				type: 'bar',
+				color: '#5470c6',
+
+			}]
+		};
+							myChart.setOption(option);
+
+				</script>	
+			<ul>
+				<li class="firstLabel-One">
+					<span class="ability">面对挫折</span>
+				</li>
+			</ul>
+			<p class="textOne">女性正在遭受性别歧视、刻板印象、容貌焦虑、“职业天花板”等问题，女性处境不是一语能道尽的。在面对挫折，提高自信方面，女性大都以正面地情感去客服，以积极的形态展示自我，释放能量。
+			</p>
+			<h1>为提高自信心做过哪些事情？</h1>
+			<div id="chart1-3" class="chart"></div>
+				<script>
+					var myChart = echarts.init(document.getElementById('chart1-3'));
+						var option;
+							option = {
+								title:[{
+		subtext:'数据来源：珍爱网《2021女性力量调查》',
+		left:'center',
+		bottom:'25px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '14%',
+				containLabel: true
+			},
+					toolbox: {
+					show: true,
+					feature: {
+						dataZoom: {
+							yAxisIndex: 'none'
+						},
+						dataView: {readOnly: false},
+						magicType: {type: ['line', 'bar']},
+						restore: {},
+						saveAsImage: {}
+					}
+				},
+							 tooltip: {
+								trigger:'axis',
+								axisPointer: {
+									type: 'shadow'
+								}
+							},
+
+							angleAxis: {
+								data: ['注重自己的形象', '提升自己，增加收入', '肯定自己激励自己', '运动，让自己更有活力', '消除自我否定的负面想法', '扩大社交圈，主动与人交流']
+							},
+							radiusAxis: {
+							},
+							polar: {
+							},
+							series: [{
+								type: 'bar',
+								data: [71.7, 51.14, 45.37, 44.04, 27.07, 18.64],					
+								coordinateSystem: 'polar',
+								name: '单位：%',
+								color: '#fac858',
+
+							} ],
+
+						};
+					 myChart.setOption(option); 
+				</script>
+			<h1>面对挫折通常会如何处理？</h1>
+			<div id="chart1-4" class="chart"></div>
+				<script>
+					// 基于准备好的dom，初始化echarts实例
+					var myChart = echarts.init(document.getElementById('chart1-4'));
+
+					// 指定图表的配置项和数据
+				var option;
+						option = {
+							title:[{
+		subtext:'数据来源：珍爱网《2021女性力量调查》',
+		left:'center',
+		bottom:'25px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '14%',
+				containLabel: true
+			},
+													  toolbox: {
+					show: true,
+					feature: {
+						dataZoom: {
+							yAxisIndex: 'none'
+						},
+						dataView: {readOnly: false},
+						magicType: {type: ['line', 'bar']},
+						restore: {},
+						saveAsImage: {}
+					}
+				},
+							tooltip: {
+								trigger:'axis',
+								axisPointer: {
+									type: 'shadow'
+								}
+							},
+					
+				xAxis: {
+					type: 'category',
+					data: ['积极应对，想办法解决', '保持乐观相信一切会变好', '寻求家人朋友的帮助', '慌张难过，不知所措', '逃避回避问题'],
+				},
+
+				yAxis: {
+					type: 'value',
+					name:"单位：%",
+				},
+				series: [{
+					data: [
+						{
+            value: 80.59,
+            itemStyle: {
+                color: '#fac858'
+            }
+        }, {
+            value: 65,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 20.91,
+            itemStyle: {
+                color: '#fac858'
+            }
+        }, {
+            value: 5.93,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 5.05,
+            itemStyle: {
+                color: '#fac858'
+            }
+        }, ],
+					type: 'bar',
+					
+
+				}]
+			};
+					myChart.setOption(option);
+				</script>
+			<ul>
+				<li class="firstLabel-One">
+					<span class="ability">个人发展</span>
+				</li>
+			</ul>
+			<p class="textOne">随着女性解放运动的开展，女性在更大范围中参与社会生产劳动，目前已经成为推动社会进步的重要力量，在诸多领域创造着社会价值和经济价值。绝大多数女性希望通过付诸行动提高个人能力并以此提高收入。
+			</p>
+			<h1>单身女性收入情况</h1>
+			<div id="chart1-5" class="chart"></div>
+				<script>
+					// 基于准备好的dom，初始化echarts实例
+					var myChart = echarts.init(document.getElementById('chart1-5'));
+
+					// 指定图表的配置项和数据
+					var option;
+					option = {
+							title:[{
+					subtext:'数据来源：珍爱网《2021女性力量调查》',
+					left:'center',
+					bottom:'25px',
+				}],
+						grid: {
+							left: '3%',
+							right: '3%',
+							bottom: '14%',
+							containLabel: true
+						},
+
+								toolbox: {
+									feature: {
+										dataView: {show: true, readOnly: false},
+										magicType: {show: true, type: ['line', 'bar']},
+										restore: {show: true},
+										saveAsImage: {show: true}
+									}
+								},
+								tooltip: {
+									trigger: 'axis',
+									axisPointer: {
+										type: 'cross',
+										crossStyle: {
+											color: '#999'
+										}
+									}
+								},
+								xAxis: {
+									type: 'category',
+									data: ['<¥3000 ', '¥3000-¥5000 ', '¥5001-¥8000  ', '¥8001-¥10000', '¥10001-¥15000 ', '¥15001-¥20000 ', '¥20001-¥30000 ', '>¥30000 '],
+									axisLabel: { interval: 0, rotate: 30 },
+								},
+								yAxis: {
+
+										type: 'value',
+										name: '单位：%',
+										min: 0,
+										max: 30,
+										interval: 5,
+										axisLabel: {
+											formatter: '{value} '
+										},
+
+								},
+								series: [{
+									data: [6.36, 23.88, 25.93, 14.87, 12.99,7.02,4.37,4.59],
+									type: 'line',
+									symbol: 'triangle',
+									symbolSize: 30,
+									label: {
+											show: true,
+											position: 'bottom'
+										},
+									lineStyle: {
+										color: '#91cc75',
+										width: 5,
+										type: 'dashed'
+									},
+									itemStyle: {
+										borderWidth: 3,
+										borderColor: '#91cc75',
+										color: '#5470c6',
+									}
+								}]
+								};
+
+							myChart.setOption(option);
+				</script>
+			<h1>个人能力提高方面付诸的行动有哪些？</h1>
+			<div id="chart1-6" class="chart"></div>
+				<script>
+					// 基于准备好的dom，初始化echarts实例
+					var myChart = echarts.init(document.getElementById('chart1-6'));
+
+					// 指定图表的配置项和数据
+				var option;
+						option = {
+							title:[{
+		subtext:'数据来源：珍爱网《2021女性力量调查》',
+		left:'center',
+		bottom:'35px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '14%',
+				containLabel: true
+			},
+													  toolbox: {
+					show: true,
+					feature: {
+						dataZoom: {
+							yAxisIndex: 'none'
+						},
+						dataView: {readOnly: false},
+						magicType: {type: ['line', 'bar']},
+						restore: {},
+						saveAsImage: {}
+					}
+				},
+							tooltip: {
+								trigger:'axis',
+								axisPointer: {
+									type: 'shadow'
+								}
+							},
+					
+				xAxis: {
+					type: 'category',
+					data: ['职场技能提升', '坚持阅读', '发展副业', '参加兴趣培训班', '学习小语种/新技能','没有任何行动'],
+				},
+
+				yAxis: {
+					type: 'value',
+					name:"单位：%",
+				},
+				series: [{
+					data: [
+						{
+            value: 59.62,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 57.24,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 55.91,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 29.84,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 29.06,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        }, {
+            value: 16.97,
+            itemStyle: {
+                color: '#91cc75'
+            }
+        }, {
+            value: 9.82,
+            itemStyle: {
+                color: '#5470c6'
+            }
+        },
+			],
+					type: 'bar',
+					color: '#cc3366',
+
+				}]
+			};
+					myChart.setOption(option);
+				</script>
+		</div>
+
+		<!--标题图片-->
+		<a id="pageTwo"></a>
+		<div class="photo"></div>
+		<!--小标题：消费能力-->
+		<ul>
+			<li class="firstLabel">
+				<span class="ability">消费能力</span>
+			</li>
+		</ul>
+		<h2>女性用户线上消费能力分布图</h2>
+		<!--女性用户线上消费能力分布图-->
+		<div id="chart2-1" class="chart"></div>
+			<script>
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('chart2-1'));
+
+				// 指定图表的配置项和数据
+		var option;
+					option = {
+						title:[{
+							subtext:'数据来源：QuestMobile GROWTH 用户画像标签数据2021年1月',
+							left:'center',
+							bottom:'30px',
+						}],
+						grid: {
+							left: '3%',
+							right: '3%',
+							bottom: '14%',
+							containLabel: true
+						},
+
+						toolbox: {
+				show: true,
+				feature: {
+					dataZoom: {
+						yAxisIndex: 'none'
+					},
+					dataView: {readOnly: false},
+					magicType: {type: ['line', 'bar']},
+					restore: {},
+					saveAsImage: {}
+				}
+			},
+			legend: {},
+			tooltip: {},
+			dataset: {
+				dimensions: ['product', '2020-01', '2021-01'],
+				source: [
+					{product: '1000元以上', '2020-01': 17.4, '2021-01': 17.8},
+					{product: '200-1000元', '2020-01': 40.9, '2021-01': 41.5},
+					{product: '200元以下', '2020-01': 41.7, '2021-01': 40.8},
+				]
+			},
+		
+			xAxis: {type: 'category'},
+			yAxis: {
+				name:'单位：%',
+			},
+			// Declare several bar series, each will be mapped
+			// to a column of dataset.source by default.
+			series: [
+				{type: 'bar'},
+				{type: 'bar'},
+			]
+		};
+		 myChart.setOption(option);
+			</script>
+		<h2>2021年1月线上高消费意愿用户分布</h2>
+		<!--2021年1月线上高消费意愿用户分布-->
+		<div id="chart2-2" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-2'));
+				var option;
+				option = {
+					title:[{
+						subtext:'数据来源：QuestMobile GROWTH 用户画像标签数据2021年1月',
+						left:'center',
+						bottom:'30px',
+					}],
+					grid: {
+						left: '3%',
+						right: '3%',
+						bottom: '14%',
+						containLabel: true
+					},
+
+								toolbox: {
+				show: true,
+				feature: {
+					dataZoom: {
+						yAxisIndex: 'none'
+					},
+					dataView: {readOnly: false},
+					magicType: {type: ['line', 'bar']},
+					restore: {},
+					saveAsImage: {}
+				}
+			},
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {            // Use axis to trigger tooltip
+					type: 'shadow'        // 'shadow' as default; can also be 'line' or 'shadow'
+				}
+			},
+			legend: {
+				data: ['24岁及以下', '25-35岁', '36岁及以上']
+			},
+			
+			yAxis: {
+				type: 'value',
+				name:'单位：%'
+			},
+			xAxis: {
+				type: 'category',
+				data: ['全网用户', '女性用户']
+			},
+			series: [
+				{
+					name: '24岁及以下',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [33, 33.9]
+				},
+				{
+					name: '25-35岁',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [35.4, 36.1]
+				},
+				{
+					name: '36岁及以上',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [31.6, 30]
+				},
+			]
+		};
+		 myChart.setOption(option);
+			 </script>
+		<p>女性消费崛起正当时，线上中高消费能力不断提升，由于经济条件的大幅改善，年轻女性表现出更强的消费意愿。女性消费能力不断提升，“她经济” 持续释放价值空间。</p>
+		<!--小标题：消费偏好与倾向-->
+		<ul>
+			<li class="secondLabel">
+				<span class="ability">消费偏好与倾向</span>
+			</li>
+		</ul>
+		<p>1、女性群体教育、收入水平提高带来的自我意识崛起，促使消费需求逐步释放，注重生活质量与品位，同时也考量性价比。</p>
+		<h2>女性用户消费关注点用户活跃占比变化</h2>
+		<!--女性用户消费关注点用户活跃占比变化图-->
+		<div id="chart2-3" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-3'));
+				var option;
+				option = {
+
+					title:[{
+		subtext:'注：活跃占比TGI=女性用户某个标签属性的月活跃占比/全网具有该标签属性的月活跃占比*100 \n \n 数据来源：QuestMobile GROWTH 用户画像标签数据2021年1月',
+		left:'center',
+		bottom:'10px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '10%',
+				containLabel: true
+			},
+			toolbox: {
+				feature: {
+					dataView: {show: true, readOnly: false},
+					magicType: {show: true, type: ['line', 'bar']},
+					restore: {show: true},
+					saveAsImage: {show: true}
+				}
+			},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+								type: 'cross',
+					crossStyle: {
+						color: '#999'
+					}
+						}
+				},
+			legend: {
+				data: ['2021-01', '2020-01', '年度占比差']
+			},
+			xAxis: [
+				{
+					type: 'category',
+					data: ['关注品质', '关注价格', '关注品牌', '关注时尚', '关注健康', '关注体验'],
+					axisPointer: {
+						type: 'shadow'
+					}
+				}
+			],
+			yAxis: [
+				{
+					type: 'value',
+					name: '活跃占比TGI',
+					min: 0,
+					max: 80,
+					interval: 20,
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				},
+				{
+					type: 'value',
+					name: '年度活跃占比差',
+					min: -6,
+					max: 5,
+					interval: 2,
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				}
+			],
+			series: [
+				{
+					name: '2021-01',
+					type: 'bar',
+					data: [58.6, 54.2, 53.8, 52.5, 34.4, 17.1]
+				},
+				{
+					name: '2020-01',
+					type: 'bar',
+					data: [54.8, 49.4, 49, 57.7, 37.4, 17.8]
+				},
+				{
+					name: '年度活跃占比差',
+					type: 'line',
+					yAxisIndex: 1,
+					data: [3.8, 4.8, 4.8, -5.2, -3, -0.7]
+				}
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<p>2、随着年龄的增加，女性消费偏好从悦己向家庭转变其中，24岁及以下女性更加关注美妆、食品；25-35岁女性是宝妈主流人群，对母婴类商品消费偏好显著；36岁及以上女性顾家属性更强，对饰品、洗护等品类表现出较高消费偏好。</p>
+		<h2>2021年1月女性人群消费品类占比TGI分布</h2>
+		<!--2021年1月女性人群消费品类占比TGI分布图-->
+		<div id="chart2-4" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-4'));
+				var option;
+				option = {
+				title:[{
+						subtext:'注：1、活跃占比TGI=女性人群用户某个标签属性的月活跃占比/全网具有该标签属性的月活跃占比*100，2、选取女性消费品类占比TOP20中，按照活跃占比TGI>100排列 \n \n 数据来源：QuestMobile GROWTH 用户画像标签数据2021年1月',
+						left:'center',
+						bottom:'10px',
+					}],
+				grid: {
+								left: '3%',
+								right: '3%',
+								bottom: '10%',
+								containLabel: true
+							},
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {            // Use axis to trigger tooltip
+					type: 'shadow'        // 'shadow' as default; can also be 'line' or 'shadow'
+				}
+			},
+			legend: {
+				data: ['女性整体', '24岁及以下女性用户', '25-35岁女性用户', '36岁及以上女性用户']
+			},
+			
+			xAxis: {
+				type: 'value'
+			},
+			yAxis: {
+				type: 'category',
+				data: ['洗护', '饰品', '食品', '母婴', '美妆']
+			},
+			series: [
+				{
+					name: '女性整体',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [101, 103, 106, 115, 123]
+				},
+				{
+					name: '24岁及以下女性用户',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [89, 89, 102, 41, 151]
+				},
+				{
+					name: '25-35岁女性用户',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [106, 107, 107, 163, 110]
+				},
+				{
+					name: '36岁及以上女性用户',
+					type: 'bar',
+					stack: 'total',
+					label: {
+						show: true
+					},
+					emphasis: {
+						focus: 'series'
+					},
+					data: [121, 134, 115, 118, 86]
+				},
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<p>3、新一代年轻女性更愿意为颜值消费，追求潮流，在国货崛起发展背景下，她们作为美妆主要受众人群，助推新兴国产美妆品牌持续发展。</p>
+		<h2>2021年1月24岁及以下女性用户美妆品牌关注度TOP10</h2>
+		<!--2021年1月24岁及以下女性用户美妆品牌关注度TOP10-->
+		<div id="chart2-5" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-5'));
+				var option;
+				option = {
+			title:[{
+		subtext:'注：关注度：在统计周期内，关注某品牌的用户数占关注该品类所有品牌用户数的比例 \n \n 数据来源：QuestMobile NEW MEDIA 新媒体数据库 2021年1月',
+		left:'center',
+		bottom:'8px',
+	}],
+grid: {
+				left: '3%',
+				right: '8%',
+				bottom: '15%',
+				containLabel: true
+			},
+			toolbox: {
+				show: true,
+				feature: {
+					dataZoom: {
+						yAxisIndex: 'none'
+					},
+					dataView: {readOnly: false},
+					magicType: {type: ['line', 'bar']},
+					restore: {},
+					saveAsImage: {}
+				}
+			},
+			tooltip:{
+				formatter:"{c}"
+			},
+			dataset: {
+				source: [
+					['score',  'product'],
+					[3.3, 'Judydoll橘朵'],
+					[3.8,'YSL伊夫圣罗兰'],
+					[3.9, 'L‘Oreal欧莱雅'],
+					[3.9, '3CE三熹玉'],
+					[4.4,  'EsteelLauder雅诗兰黛'],
+					[4.9,  'Colorkey珂拉琪'],
+					[5.1, 'Proya珀莱雅'],
+					[7.6,  'Florasis花西子'],
+					[8.4,  'MAC魅可'],
+					[11.7,  'Perfect Diary完美日记']
+				]
+			},
+			xAxis: {name: '关注度/%'},
+			yAxis: {type: 'category'},
+			visualMap: {
+				show:'true',
+				precision:'1',
+				orient: 'horizontal',
+				left: '150px',
+				bottom:'50px',
+				min: 3,
+				max: 12,
+				text: ['高', '低'],
+				// Map the score column to color
+				dimension: 0,
+				inRange: {
+					color: ['#65B581', '#FFCE34', '#FD665F']
+				}
+			},
+			series: [
+				{
+					type: 'bar',
+					encode: {
+						// Map the "关注度/%" column to X axis.
+						x: '关注度/%',
+						// Map the "product" column to Y axis
+						y: 'product'
+					}
+				}
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<p>4、产品越来越丰富的当下，新晋妈妈们除了为孩子提供全方位的关爱，也不乏对自己的关心，围绕准妈妈们的用品、穿搭类商品受到了更多关注。</p>
+		<h2>2021年1月25-35岁女性用户母婴细分品类关注度TOP10</h2>
+		<!--2021年1月25-35岁女性用户母婴细分品类关注度TOP10-->
+		<div id="chart2-6" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-6'));
+				var option;
+				option = {
+			title:[{
+		subtext:'注：关注度：在统计周期内，关注某细分品类的用户数占关注该品类所有细分品类用户数的比例 \n \n 数据来源：QuestMobile NEW MEDIA 新媒体数据库 2021年1月',
+		left:'center',
+		bottom:'-5px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '20%',
+				containLabel: true
+			},
+			toolbox: {
+				show: true,
+				feature: {
+					dataZoom: {
+						yAxisIndex: 'none'
+					},
+					dataView: {readOnly: false},
+					magicType: {type: ['line', 'bar']},
+					restore: {},
+					saveAsImage: {}
+				}
+			},
+			tooltip:{
+				formatter:"{c}"
+			},
+			dataset: {
+				source: [
+					['score',  'product'],
+					[9.3, '儿童家具'],
+					[13.3,'玩具车'],
+					[13.5, '孕产妇穿搭'],
+					[15.1, '宝宝出行'],
+					[17.4,  '童装'],
+					[18.7,  '孕产妇用品'],
+					[23.7, '辅食零食'],
+					[31.7,  '哺乳喂养'],
+					[41.4,  '洗护用品'],
+					[58.3,  '儿童玩具']
+				]
+			},
+		   grid: {containLabel: true},
+			xAxis: {name: '关注度/%'},
+			yAxis: {type: 'category'},
+			visualMap: {
+				show:'true',
+				precision:'1',
+				orient: 'horizontal',
+				left: '150px',
+				bottom:'35px',
+				min: 9,
+				max: 60,
+				text: ['高', '低'],
+				// Map the score column to color
+				dimension: 0,
+				inRange: {
+					color: ['#65B581', '#FFCE34', '#FD665F']
+				}
+			},
+			series: [
+				{
+					type: 'bar',
+					encode: {
+						// Map the "关注度/%" column to X axis.
+						x: '关注度/%',
+						// Map the "product" column to Y axis
+						y: 'product'
+					}
+				}
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<!--小标题：消费途径-->
+		<ul>
+			<li class="firstLabel">
+				<span class="ability">消费途径</span>
+			</li>
+		</ul>
+		<p>综合电商平台仍是女性人群主流购物渠道，受疫情影响，女性逛街购物战场加速线上化，直播带货等购物形式助推电商平台加深对女性用户的吸引力。</p>
+		<h2>2020年1月、2021年1月女性用户在移动购物行业APP渗透率TOP10</h2>
+		<!--2020年1月、2021年1月女性用户在移动购物行业APP渗透率TOP10-->
+		<div id="chart2-7" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-7'));
+				var option;
+			var colors = ['#5470C6', '#91CC75', '#EE6666'];
+
+		option = {
+			color: colors,
+
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'cross'
+				}
+			},
+			title:[{
+		subtext:'注：1.活跃渗透率=某目标人群启动某个APP媒介的月活跃用户数除以该目标人群的月活跃用户数； \n \n 2.活跃渗透率TGI=目标人群中某个APP媒介的月活跃渗透率除以全网中该APP媒介的月活跃渗透率*100 \n \n 数据来源：QuestMobile GROWTH 用户画像标签数据2021年1月',
+		left:'center',
+		bottom:'20px',
+	}],
+grid: {
+				left: '3%',
+				right: '5%',
+				bottom: '18%',
+				containLabel: true
+			},
+			toolbox: {
+				show: true,
+				feature: {
+					dataZoom: {
+						yAxisIndex: 'none'
+					},
+					dataView: {readOnly: false},
+					magicType: {type: ['line', 'bar']},
+					restore: {},
+					saveAsImage: {}
+				}
+			},
+			legend: {
+				data: ['2021-01', '2020-01', '活跃渗透率TGI']
+			},
+			xAxis: [
+				{
+					type: 'category',
+					axisTick: {
+						alignWithLabel: true
+					},
+					data: ['手机淘宝', '拼多多', '京东', '唯品会', '淘宝特价版', '闲鱼', '苏宁易购', '手机天猫', '阿里巴巴', '得物（毒）']
+				}
+			],
+			yAxis: [
+				{
+					type: 'value',
+					name: '2021-01',
+					min: 0,
+					max: 80,
+					position: 'right',
+					axisLine: {
+						show: true,
+						lineStyle: {
+							color: colors[0]
+						}
+					},
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				},
+				{
+					type: 'value',
+					name: '2020-01',
+					min: 0,
+					max: 80,
+					position: 'right',
+					offset: 80,
+					axisLine: {
+						show: true,
+						lineStyle: {
+							color: colors[1]
+						}
+					},
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				},
+				{
+					type: 'value',
+					name: '活跃渗透率TGI',
+					min: 70,
+					max: 140,
+					position: 'left',
+					axisLine: {
+						show: true,
+						lineStyle: {
+							color: colors[2]
+						}
+					},
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				}
+			],
+			series: [
+				{
+					name: '2021-01',
+					type: 'bar',
+					data: [74.8, 55.8, 30.2, 10.7, 8.0, 7.9, 4.0, 3.5, 2.5, 2.2]
+				},
+				{
+					name: '2020-01',
+					type: 'bar',
+					yAxisIndex: 1,
+					data: [65.5, 45.6, 22.9, 8.7, 1.0, 7.8, 3.0, 4.1, 1.2, 1.2]
+				},
+				{
+					name: '活跃渗透率TGI',
+					type: 'line',
+					yAxisIndex: 2,
+					data: [111, 127, 101, 133, 101, 93, 84, 98, 94, 79]
+				}
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<h2>2020年1月、2021年1月女性用户在电商平台观看直播用户比例</h2>
+		<!--2020年1月、2021年1月女性用户在电商平台观看直播用户比例-->
+		<div id="chart2-8" class="chart"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-8'));
+				var option;
+				option = {
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'cross',
+					crossStyle: {
+						color: '#999'
+					}
+				}
+			},
+					title:[{
+		subtext:'注：1.选取手机淘宝、京东APP去重用户；2.观看直播占比=平台分人群观看直播用户规模/平台分人群整体用户 \n \n 数据来源：QuestMobile GROWTH 用户画像标签数据2021年1月',
+		left:'center',
+		bottom:'10px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '10%',
+				containLabel: true
+			},
+			toolbox: {
+				feature: {
+					dataView: {show: true, readOnly: false},
+					magicType: {show: true, type: ['line', 'bar']},
+					restore: {show: true},
+					saveAsImage: {show: true}
+				}
+			},
+			legend: {
+				data: ['2020-01', '2021-01', '变化率']
+			},
+			xAxis: [
+				{
+					type: 'category',
+					data: ['整体女性用户', '24岁及以下女性用户', '25-35岁女性用户', '36岁及以上女性用户'],
+					axisPointer: {
+						type: 'shadow'
+					}
+				}
+			],
+			yAxis: [
+				{
+					type: 'value',
+					name: '比例',
+					min: 0,
+					max: 30,
+					interval: 10,
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				},
+				{
+					type: 'value',
+					name: '变化率',
+					min: 0,
+					max: 5,
+					interval: 1,
+					axisLabel: {
+						formatter: '{value} %'
+					}
+				}
+			],
+			series: [
+				{
+					name: '2020-01',
+					type: 'bar',
+					data: [15.3, 15.7, 15.9, 13.9]
+				},
+				{
+					name: '2021-01',
+					type: 'bar',
+					data: [18.6, 18.3, 19.6, 17.3]
+				},
+				{
+					name: '变化率',
+					type: 'line',
+					yAxisIndex: 1,
+					data: [3.3, 2.6, 3.7, 3.4]
+				}
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<!--小标题：消费维权-->
+		<ul>
+			<li class="firstLabel">
+				<span class="ability">消费维权</span>
+			</li>
+		</ul>
+		<p>据国内网络消费调解平台“电诉宝”受理用户维权案例显示，2020年全年网络消费投诉用户性别占比分为为男性(46.347%)、女性(53.626%)。</p>
+		<!--2020年网络消费男女投诉用户分布-->
+		<div class="pictureTwo">
+			<img src="img/图二.jpg" alt="消费维权">
+		</div>
+		<p>2021年3月8日，依据国内网络消费调解平台“电诉宝”2020年全年受理的全国480家互联网平台海量用户消费纠纷案例大数据，网经社电子商务研究中心发布了《2020年度女性网络消费投诉数据与典型案例报告》 。报告显示，80、90后成维权“主力军”，全年网络消费女性投诉超“半边天”，跨境电商、生鲜电商、在线教育等7个领域成“重灾区”。</p>
+		<h2>2020年各领域消费男女投诉用户分布</h2>
+		<!--2020年各领域消费男女投诉用户分布-->
+		<div id="chart2-10" class="chart"></div>
+			<script>
+					// 基于准备好的dom，初始化echarts实例
+					var myChart = echarts.init(document.getElementById('chart2-10'));
+
+					// 指定图表的配置项和数据
+				var option;
+			option = {
+				title:[{
+		subtext:'数据来源：网经社电子商务研究中心《2020年度女性网络消费投诉数据与典型案例报告》',
+		left:'center',
+		bottom:'60px',
+	}],
+grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '18%',
+				containLabel: true
+			},
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'shadow',
+						label: {
+							show: true
+						}
+					}
+				},
+				toolbox: {
+					show: true,
+					feature: {
+						mark: {show: true},
+						dataView: {show: true, readOnly: false},
+						magicType: {show: true, type: ['line', 'bar']},
+						restore: {show: true},
+						saveAsImage: {show: true}
+					}
+				},
+				calculable: true,
+				legend: {
+					data: [ '男性用户', '女性用户'],
+
+				},
+				xAxis: [
+					{
+						type: 'category',
+						data: ['零售电商', '跨境电商', '品牌电商', '社交电商', '生鲜电商','二手电商','汽车电商','生活服务电商','在线教育','在线旅游','在线餐饮','交通出行','在线票务','金融科技','分期消费','第三支付','电商物流','B2B电商']
+					}
+				],
+				yAxis: [
+					{
+						type: 'value',
+						name: '单位：%',
+
+					}
+				],
+				dataZoom: [
+					{
+						show: true,
+						start: 94,
+						end: 100
+					},
+					{
+						type: 'inside',
+						start: 94,
+						end: 100
+					},
+					{
+						show: true,
+						yAxisIndex: 0,
+						filterMode: 'empty',
+						width: 30,
+						height: '80%',
+						showDataShadow: false,
+						left: '93%'
+					}
+				],
+				series: [
+					{
+						name: '男性用户',
+						type: 'bar',
+						data: [52.37, 25.92 ,58.46, 55.58,36.36, 50.92, 81.82 ,50.76 ,27.82 ,27.72 ,47.62 ,63.16, 33.36, 37.82, 70.29, 56.53, 53.76 ,47.54]
+					},
+
+
+
+					{
+						name: '女性用户',
+						type: 'bar',
+						data: [47.60, 74.09, 41.54 ,44.42, 63.64, 49.08, 15.15, 49.24, 72.15, 72.28, 52.38, 36.84 ,66.67 ,62.12 ,29.79 ,43.48, 46.21, 52.46]
+					}
+
+						]
+			};
+
+					myChart.setOption(option);
+				</script>
+		<!--2020年网络消费女性投诉用户年龄段分布-->
+		<h2 class="textFive">2020年网络消费女性投诉用户年龄段分布</h2>
+		<div id="chart2-11" class="chartTwo"></div>
+			<script>
+		  var myChart = echarts.init(document.getElementById('chart2-11'));
+				var option;
+				option = {
+			title:[{
+		subtext:'数据来源：网经社电子商务研究中心《2020年度女性网络消费投诉数据与典型案例报告》',
+		left:'center',
+		bottom:'80px',
+	}],
+			grid: {
+				left: '3%',
+				right: '3%',
+				bottom: '5%',
+				containLabel: true
+			},
+			tooltip: {
+				trigger: 'item'
+			},
+			legend: {
+				orient: 'vertical',
+				left: '100px',
+				top:'50px',
+			},
+			series: [
+				{
+					name: '年龄段分布',
+					type: 'pie',
+					radius: '50%',
+					data: [
+						{value: 50.8, name: '30岁及以下'},
+						{value: 38.38, name: '30-40岁'},
+						{value: 10.12, name: '40-60岁'},
+						{value: 0.7, name: '60岁以上'},
+					],
+					emphasis: {
+						itemStyle: {
+							shadowBlur: 10,
+							shadowOffsetX: 0,
+							shadowColor: 'rgba(0, 0, 0, 0.5)'
+						}
+					}
+				}
+			]
+		};
+				 myChart.setOption(option);
+			 </script>
+		<p>网经社电子商务研究中心法律权益部分析师蒙慧欣表示，女性用户占据互联网“半壁江山”，在网络消费中更是占据重要的位置。从年度消费维权数据中可以看到，受经济实力、文化教育水平和社会文化的影响，新一代的女性消费者不仅“买买买”，对于不完美的消费体验也勇于“进击”，拿起“权力”维权。通过17个网络消费领域中男女投诉用户对比，可以看到在跨境电商、生鲜电商、在线教育、在线旅游、在线餐饮、在线票务、金融科技这7个领域中，女性用户维权力度明显高于男性，其中跨境电商女性投诉用户达74.086%，位列第一，其次是在线旅游(72.276%)、在线教育(72.154%)分别占据第一、二位，生鲜电商(63.636%)、在线票务(66.667%)、金融科技(62.121%)。
+		蒙慧欣分析，在上述7个领域中，可以看出女性用户占据人数较多之外，也各有特点。一是生活水平的提升，女性对跨境网购更为追崇，尤其在化妆品、包包以及服饰等商品购买上，但也间接表明跨境网购中消费问题不少;二是女性用户逐渐成为旅游消费市场的核心人群，也是家庭出游决策的主导者，也更愿意花钱在享受生活上;三是注重个人知识、能力的储备，注重内核修缮提升自我，同时，大部分女性承担起家庭孩子的学习培养，尤其是疫情期间，花费更多金钱购买在线教育产品，让孩子宅家也能学习;四是随着80、90后中产女性成为家庭生活消费主导者的崛起，生鲜更是迎来消费场景、品质诉求双升级;五是80后、90后女性群体消费观念更加前卫，分期购物消费方式也越来越受到女性用户的欢迎，不过理性消费也很重要，同时也更注重金融理财产品的投入。
+		</p>
+		<!--标题图片-->
+		<a id="pageThree"></a>
+		<div class="photoThree"></div>
+		<!--小标题：大众媒体中的“她”-->
+		<ul>
+			<li class="firstLabel-Two">
+				<span class="abilityOne">大众媒体中的“她”</span>
+			</li>
+		</ul>
+		<h2>18两家电视台周末“黄金档”广告展示的女性形象统计图</h2>
+		<!--18两家电视台周末“黄金档”广告展示的女性形象统计图-->
+		<div class="box">
+			<div id="chart3-1" class="chart-qunzhuang"></div>
+				<script>
+				// 基于准备好的dom，初始化echarts实例
+					var myChart = echarts.init(document.getElementById('chart3-1'));
+					// 指定图表的配置项和数据
+					var option = {
+						title:[{
+							text:'服饰',
+							left:'center',
+							bottom:'10px',
+						}],
+						grid: {
+								left: '3%',
+								right: '3%',
+								bottom: '10%',
+								containLabel: true
+						},
+						tooltip: {
+								trigger: 'item'
+						},
+						legend: {
+							top: '5%',
+							left: 'center'
+						},
+						series: [
+							{
+								name: '广告主题',
+								type: 'pie',
+								radius: ['40%', '70%'],
+								avoidLabelOverlap: false,
+								itemStyle: {
+									borderRadius: 10,
+									borderColor: '#fff',
+									borderWidth: 2
+								},
+						label: {
+									show: false,
+									position: 'centre'
+								},
+						emphasis: {
+									label: {
+										show: true,
+										fontSize: '15',
+										fontWeight: 'bold'
+									}
+								},
+						labelLine: {
+									show: false
+								},
+						data: [
+								{value: 45, name: '其他'},
+								{value: 55, name: '裙装'},
+
+								]
+
+							},
+
+						]
+					};
+
+
+	 myChart.setOption(option);
+				</script>
+			<div id="chart3-2" class="chart-kongjian"></div>
+				<script>
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('chart3-2'));
+
+				// 指定图表的配置项和数据
+				var option = {
+					title:[{
+				text:'所处空间',
+				left:'center',
+				bottom:'10px',
+			}],
+		grid: {
+						left: '3%',
+						right: '3%',
+						bottom: '10%',
+						containLabel: true
+					},
+					tooltip: {
+						trigger: 'item'
+			},
+			legend: {
+				top: '5%',
+				left: 'center'
+			},
+			series: [
+				{
+					name: '广告主题',
+					type: 'pie',
+					radius: ['40%', '70%'],
+					avoidLabelOverlap: false,
+					itemStyle: {
+						borderRadius: 10,
+						borderColor: '#fff',
+						borderWidth: 2
+					},
+					label: {
+						show: false,
+						position: 'centre'
+					},
+					emphasis: {
+						label: {
+							show: true,
+							fontSize: '15',
+							fontWeight: 'bold'
+						}
+					},
+					labelLine: {
+						show: false
+					},
+					data: [
+						{value: 60, name: '外部空间'},
+						{value: 40, name: '家庭空间'},
+
+					]
+
+				},
+
+			]
+		};
+
+
+		 myChart.setOption(option);
+					</script>
+			<div id="chart3-3" class="chart-nianling"></div>
+				<script>
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('chart3-3'));
+
+				// 指定图表的配置项和数据
+				var option = {
+					title:[{
+				text:'年龄段',
+				left:'center',
+				bottom:'10px',
+			}],
+					grid: {
+						left: '3%',
+						right: '3%',
+						bottom: '10%',
+						containLabel: true
+					},
+					tooltip: {
+						trigger: 'item'
+			},
+			legend: {
+				top: '5%',
+				left: 'center'
+			},
+			series: [
+				{
+					name: '广告主题',
+					type: 'pie',
+					radius: ['40%', '70%'],
+					avoidLabelOverlap: false,
+					itemStyle: {
+						borderRadius: 10,
+						borderColor: '#fff',
+						borderWidth: 2
+					},
+					label: {
+						show: false,
+						position: 'centre'
+					},
+					emphasis: {
+						label: {
+							show: true,
+							fontSize: '15',
+							fontWeight: 'bold'
+						}
+					},
+					labelLine: {
+						show: false
+					},
+					data: [
+						{value: 20, name: '其他年龄段'},
+						{value: 80, name: '年轻女性'},
+
+					]
+
+				},
+
+			]
+		};
+
+
+		 myChart.setOption(option);
+					</script>
+			<div id="chart3-4" class="chart-biaoqing"></div>
+				<script>
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('chart3-4'));
+
+				// 指定图表的配置项和数据
+				var option = {
+					title:[{
+				text:'表情生态',
+				subtext:'数据来源：CCTV1&湖南卫视 2020年11月',
+				left:'center',
+				bottom:'-6px',
+			}],
+				grid: {
+						left: '3%',
+						right: '3%',
+						bottom: '70px',
+						containLabel: true
+					},
+					tooltip: {
+						trigger: 'item'
+			},
+			legend: {
+				top: '5%',
+				left: 'center'
+			},
+			series: [
+				{
+					name: '广告主题',
+					type: 'pie',
+					radius: ['40%', '70%'],
+					avoidLabelOverlap: false,
+					itemStyle: {
+						borderRadius: 10,
+						borderColor: '#fff',
+						borderWidth: 2
+					},
+					label: {
+						show: false,
+						position: 'centre'
+					},
+					emphasis: {
+						label: {
+							show: true,
+							fontSize: '15',
+							fontWeight: 'bold'
+						}
+					},
+					labelLine: {
+						show: false
+					},
+					data: [
+						{value: 30, name: '其他'},
+						{value: 70, name: '着重刻画微笑、喜悦神态'},
+
+					]
+
+				},
+
+			]
+		};
+
+
+		 myChart.setOption(option);
+					</script>
+			<div id="chart3-5" class="chart-shenfen"></div>
+				<script>
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('chart3-5'));
+
+				// 指定图表的配置项和数据
+				var option = {
+
+					title:[{
+				text:'社会地位',
+				left:'center',
+				bottom:'10px',
+			}],
+					grid: {
+						left: '3%',
+						right: '3%',
+						bottom: '10%',
+						containLabel: true
+					},
+					tooltip: {
+						trigger: 'item'
+			},
+			legend: {
+				top: '5%',
+				left: 'center'
+			},
+			series: [
+				{
+					name: '广告主题',
+					type: 'pie',
+					radius: ['40%', '70%'],
+					avoidLabelOverlap: false,
+					itemStyle: {
+						borderRadius: 10,
+						borderColor: '#fff',
+						borderWidth: 2
+					},
+					label: {
+						show: false,
+						position: 'centre'
+					},
+					emphasis: {
+						label: {
+							show: true,
+							fontSize: '15',
+							fontWeight: 'bold'
+						}
+					},
+					labelLine: {
+						show: false
+					},
+					data: [
+						{value: 30, name: '展现社会身份、职业'},
+						{value: 70, name: '无展现'},
+
+					]
+
+				},
+
+			]
+		};
+
+
+		 myChart.setOption(option);
+					</script>
+		</div>
+		<p class="textFour">通过以上服饰、活动空间、年龄、神态、社会身份五个指标的计量可以发现：广告中女性形象较过去更为丰富，但“类型化”特征依然明显。
+		   统计分析发现，电视广告对女性形象的塑造呈现出积极正面的变动趋势:女性职业身份呈现多元化趋向；以女性为招揽和物化的现象逐渐减少；独立自主的新时代女性形象在电视广告中大放异彩，开始冲破传统社会分工和角色定型。
+		   简单来说，广告中的女性形象越来越丰富，越来越多元化。家庭、年龄已经不能局限女性独立的发展。当然，这和广告播出的时间段、广告本身需要达到的宣传引导作用也有关系。</p>
+		<h2>《人民日报》“一线抗疫群英谱”系列报道是如何刻画女性的？</h2>
+		<!--《人民日报》“一线抗疫群英谱”系列报道是如何刻画女性的？-->
+		<div id="chart3-6" class="chartThree"></div>
+			<script>
+	  var myChart = echarts.init(document.getElementById('chart3-6'));
+			var option;
+			option = {
+				title: [{
+			subtext: '数据来源：2020年11月《人民日报》',
+			left: 'center',
+			bottom:'100px',
+
+		}],
+
+						tooltip: {
+							trigger: 'item',
+							formatter: "{a} <br/>{b}: {c}篇"
+						},
+						legend: {
+							orient: 'vertical',
+							x: 'left',
+							data:['医护人员', '非医护人员', '男性医护人员', '女性医护人员', '两性医护人员']
+						},
+					series: [
+						{
+							name:'2020年11月统计的一线抗疫英雄情况',
+							type:'pie',
+							selectedMode: 'single',
+							radius: [0, '30%'],
+
+							label: {
+								normal: {
+									position: 'inner'
+								}
+							},
+							labelLine: {
+								normal: {
+									show: false
+								}
+							},
+							data:[
+								{value:60, name:'非医护人员', selected:true},
+								{value:52, name:'医护人员'},
+							]
+						},
+						{
+							name:'2020年11月统计的一线抗疫英雄情况',
+							type:'pie',
+							radius: ['40%', '55%'],
+
+							data:[
+								{value:21, name:'男性医护人员'},
+								{value:27, name:'女性医护人员'},
+								{value:9, name:'两性医护人员'},
+							]
+						}
+
+					]
+				};
+				myChart.setOption(option);
+				</script>
+		<h2>报道中对医护人员的刻画描写</h2>
+		<!--报道中对医护人员的刻画描写-->
+		<div id="chart3-7" class="chartThree"></div>
+			<script>
+	  var myChart = echarts.init(document.getElementById('chart3-7'));
+			var option;
+			option = {
+		title:[{
+			subtext:'数据来源:2020年11月《人民日报》',
+			bottom:'0px',
+			left:'center',
+			}
+				],
+		tooltip: {
+			trigger: 'axis',
+			axisPointer: {            // Use axis to trigger tooltip
+				type: 'shadow'        // 'shadow' as default; can also be 'line' or 'shadow'
+			}
+		},
+		legend: {
+			data: ['女性医护', '男性医护']
+		},
+		grid: {
+			left: '3%',
+			right: '4%',
+			bottom: '10%',
+			containLabel: true
+		},
+		xAxis: {
+			type: 'value'
+		},
+		yAxis: {
+			type: 'category',
+			data: ['提及家庭身份', '渲染牺牲精神', '提及落泪场面']
+		},
+		series: [
+			{
+				name: '女性医护',
+				type: 'bar',
+				stack: 'total',
+				label: {
+					show: true
+				},
+				emphasis: {
+					focus: 'series'
+				},
+				data: [13, 10, 7]
+			},
+			{
+				name: '男性医护',
+				type: 'bar',
+				stack: 'total',
+				label: {
+					show: true
+				},
+				emphasis: {
+					focus: 'series'
+				},
+				data: [3, 2, 0]
+			},
+		]
+	};
+			 myChart.setOption(option);
+		 </script>
+		<p class="textTwo">新闻报道里，流泪却不怕“牺牲”的女医护
+			2020年疫情突袭，来自全国各地的医护人员纷纷援助湖北。在相关的新闻报道中，女性医护人员引起了社会的广泛关注。
+		   上图选取《人民日报》以抗疫人物为报道主题的“一线抗疫群英谱”系列的117篇报道为样本进行分析。其中，关于医护人员的主题报道共57篇，以男性为报道对象的有21篇，以女性为报道对象的有27篇，两性均涉及的有9篇。
+		   通过对涉及女性医护人员的36篇报道文本分析发现，在对女性医护人员的记录中，36%的报道提及了女性的家庭伦理身份（妻子、母亲、女儿等），这一比例在男性医护人员中为10%；报道突出了医护作为“女性”的牺牲精神，如：“值班护士李元元突然到了生理期，疼得缩在墙角里，浑身发抖”；“队长李青在出发武汉前特意剪短了一头长发，只为更好地投入工作”；此外，在对女性医护的报道中，有19%对落泪场面有所刻画，而在对男性医护的报道中，这一比例为0。</p>
+		<!--小标题：职场中的“她”-->
+		<ul>
+			<li class="firstLabel-Two">
+				<span class="abilityOne">职场中的“她”</span>
+			</li>
+		</ul>
+		<h2>中国各行业、各层次的女性管理者比例均超过世界主要发达国家</h2>
+		<!--中国各行业、各层次的女性管理者比例均超过世界主要发达国家-->
+		<div id="chart3-8" class="chartThree"></div>
+			<script>
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('chart3-8'));
+
+			// 指定图表的配置项和数据
+		var option;
+				option = {
+					title:[{
+			subtext:'数据来源:胡润百富榜；致同会计师事务所；硅谷银行；BCG分析',
+			left:'center',
+			bottom:'0px',
+		}],
+
+					toolbox: {
+			show: true,
+			feature: {
+				dataZoom: {
+					yAxisIndex: 'none'
+				},
+				dataView: {readOnly: false},
+				magicType: {type: ['line', 'bar']},
+				restore: {},
+				saveAsImage: {}
+			}
+		},
+		legend: {},
+		tooltip: {},
+		dataset: {
+			dimensions: ['product', '2017年企业高管女性比例', '2019年白手起家女富豪榜占比'],
+			source: [
+				{product: '中国', '2017年企业高管女性比例': 31, '2019年白手起家女富豪榜占比': 57},
+				{product: '美国', '2017年企业高管女性比例': 23, '2019年白手起家女富豪榜占比': 20},
+				{product: '英国', '2017年企业高管女性比例': 19, '2019年白手起家女富豪榜占比': 7},
+			]
+		},
+			grid: {
+			left: '3%',
+			right: '7%',
+			bottom: '10%',
+			containLabel: true
+		},
+		xAxis: {type: 'category'},
+		yAxis: {
+			name:'单位：%',
+		},
+		// Declare several bar series, each will be mapped
+		// to a column of dataset.source by default.
+		series: [
+			{type: 'bar'},
+			{type: 'bar'},
+		]
+	};
+	 myChart.setOption(option);
+		</script>
+		<h2 class="textTwo">2018年科技行业女性比例</h2>
+		<!--2018年科技行业女性比例-->
+		<div id="chart3-9" class="chartThree"></div>
+			<script>
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('chart3-9'));
+				// 指定图表的配置项和数据
+			var option;
+		option = {
+			title:[{
+			subtext:'数据来源:胡润百富榜；致同会计师事务所；硅谷银行；BCG分析',
+			left:'center',
+			bottom:'45px',
+		}],
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow',
+					label: {
+						show: true
+					}
+				}
+			},
+			toolbox: {
+				show: true,
+				feature: {
+					mark: {show: true},
+					dataView: {show: true, readOnly: false},
+					magicType: {show: true, type: ['line', 'bar']},
+					restore: {show: true},
+					saveAsImage: {show: true}
+				}
+			},
+			calculable: true,
+			legend: {
+				data: [ '中国', '美国','英国'],
+
+			},
+			grid: {
+				top: '12%',
+				left: '1%',
+				right: '10%',
+				containLabel: true
+			},
+			xAxis: [
+				{
+					type: 'category',
+					data: ['创始团队', '高管', '董事会']
+				}
+			],
+			yAxis: [
+				{
+					type: 'value',
+					name: '单位：%',
+
+				}
+			],
+			dataZoom: [
+				{
+					show: true,
+					start: 94,
+					end: 100
+				},
+				{
+					type: 'inside',
+					start: 94,
+					end: 100
+				},
+				{
+					show: true,
+					yAxisIndex: 0,
+					filterMode: 'empty',
+					width: 30,
+					height: '80%',
+					showDataShadow: false,
+					left: '93%'
+				}
+			],
+			series: [
+				{
+					name: '中国',
+					type: 'bar',
+					data: [35,63,45]
+				},
+
+
+
+				{
+					name: '美国',
+					type: 'bar',
+					data: [24,43,29]
+				},
+
+
+				{
+					name: '英国',
+					type: 'bar',
+					data: [17,59,34]
+				}
+
+
+					]
+		};
+
+				myChart.setOption(option);
+			</script>
+		<p class="textThree">统计报告显示，中国正在成为全球职场平权的新星：从白手起家的女富豪，到男性主导行业中的女高管，中国女性无论是数量还是占比均遥遥领先世界主要发达国家。结合当今现状，中国女性的教育文化现在逐渐提高，中国倡导男女平等，从近两年的职场中也可以看出女性确实有所提高。学历、收入、外貌是提升中国女性自信的最主要原因，而学历、收入、外貌也是目前在就业市场上招聘者会考虑的因素。高学历的文化水平，让中国女性更自信。职场女性的领导力也进一步体现，女性能够更快更好的进行事业进阶。</p>
+
+		<h2>2020-2021年男女月收入差异</h2>
+		<!--2020-2021年男女月收入差异-->
+		<div id="chart3-10" class="chartThree"></div>
+			<script>
+			// 基于准备好的dom，初始化echarts实例
+	  		var myChart = echarts.init(document.getElementById('chart3-10'));
+			// 指定图表的配置项和数据
+			var option;
+			option = {
+				title:[{
+			subtext:'数据来源：智联招聘《2021中国女性职场现状调查报告》',
+			left:'center',
+			bottom:'45px',
+		}],
+	grid: {
+					left: '3%',
+					right: '3%',
+					bottom: '10%',
+					containLabel: true
+				},
+
+
+		tooltip: {
+			trigger: 'axis',
+			axisPointer: {
+				type: 'cross',
+				label:{
+					show:true
+				}
+			}
+		},
+		toolbox: {
+			show:true,
+			feature: {
+				dataView: {show: true, readOnly: false},
+				magicType: {show: true, type: ['line', 'bar']},
+				restore: {show: true},
+				saveAsImage: {show: true}
+			}
+		},
+		calculable:true,
+		legend: {
+			data: ['男性', '女性', '年度男女月收入差异']
+		},
+		grid: {
+				top: '12%',
+				left: '1%',
+				right: '10%',
+				containLabel: true
+			},
+		xAxis: [
+			{
+				type: 'category',
+				data: ['2020', '2021'],
+				axisPointer: {
+					type: 'shadow'
+				}
+			}
+		],
+		yAxis: [
+			{
+				type: 'value',
+				name: '年度平均月收入',
+				min: 0,
+				max: 10000,
+				interval: 2000,
+				axisLabel: {
+					formatter: '{value} 元'
+				}
+			},
+			{
+				type: 'value',
+				name: '年度男女月收入差异',
+				min: 0,
+				max: 25,
+				interval: 5,
+				axisLabel: {
+					formatter: '{value} %'
+				}
+			}
+		],
+		series: [
+			{
+				name: '男性',
+				type: 'bar',
+				data: [9848,9328]
+			},
+			{
+				name: '女性',
+				type: 'bar',
+				data: [8173,8138]
+			},
+			{
+				name: '年度男女月收入差异',
+				type: 'line',
+				yAxisIndex: 1,
+				data: [20,15]
+			}
+		]
+	};
+			 myChart.setOption(option);
+		 </script>
+		<p class="textFive">“女性在各行各业中占有越来越多的席位，女性领导也会越来越多，她们身上表现出来的能力和影响力丝毫不逊于男性。”
+			从上图可知，近三年，男女月收入差异正在逐渐缩小。本来职位是导致男女薪酬分化的最大因素，近年来，随着女性的工作能力和职业发展意愿不断增强，越来越多的女性开始进入管理层。女性在高管和高薪技术职位中的比例升高，提升了高收入女性的整体薪资水平。</p>
+		<div class="footer">
+			有问题请联系我们：<br>E-mail:805233128@qq.com <br> 最终解释权归“糖果齁咸小组”所有
+		</div>
+	</div>
+</body>
+</html>

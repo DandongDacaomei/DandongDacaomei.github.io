@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+
+.background{
+	background: #E8CEDC;
+	width: 100%;
+	margin: auto;
+}
+.back{
+	background: #F9E2E2;
+	width: 1300px;
+	margin: auto;
+}
+/*设置首页*/
+.img{
+	margin: 0 auto;
+	width: 100%;
+	height: 760px;
+	background: url(  ../img/首页.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	
+}
+
+
+.left{
+	width: 50%;
+	margin:auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	
+}
+.right{
+	margin: 0 auto;
+	width: 100%;
+	background-repeat: no-repeat;
+	float:right;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	
+}
+.right img{
+	width: 70%
+	
+}
+
+.PlayEy {
+	position: absolute;
+	width:20%;
+	height:42%;
+	background: url(  ../img/音符.png) no-repeat center;
+	background-size: cover;
+	opacity:0.75;
+}
+
+.Btn {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95px;
+	height: 95px;
+	background-color: yellow;
+	background: url(  ../img/btn-bg.png) no-repeat;
+	animation: Btn-bg 3s linear infinite;
+}
+
+.Play {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: url( ../img/暂停.png);
+	transition: .5s;
+}
+
+.btns-bg {
+	display: flex;
+	float:right;
+	position:fixed;
+	top:30px;
+	right:-100px;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
+	width: 20%;
+	height: 20%;
+}
+
+@keyframes Btn-bg {
+	from {}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.article{
+	width: 70%;
+	margin: 0 auto;
+	margin-top:200px; 
+	font-size: 20px;
+	line-height: 2rem;
+	letter-spacing: 4px;
+	color: #FFFFFF;
+}
+
+.text{
+	font-family:STKaiti;
+	text-indent: 2em;
+	font-size:30px;
+	width:68%;
+	line-height: 2rem;
+	letter-spacing: 4px;
+	margin:0 auto;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+}
+
+
+/*设置导航navbar*/
+.navbar{
+	width:130px;
+	height:420px;
+	float:right;
+	position:fixed;
+	top:200px;
+	right:25px;
+
+}
+/*每一个项目100px高*/
+ul li{
+	width:100px;
+	height:140px;
+	list-style: none;
+	padding:0 30px;
+
+}
+li a{
+	color:#3C3C3C;
+}
+.navbar ul li a img{
+	width: 60px;
+	height: 60px;
+}
+
+li a img:hover {
+	background-color:#ffcccc;
+	animation:changeColor 2s infinite;
+	}
+
+
+/*设置第一部分女性力量*/
+.power{
+	width: 100%;
+	height: 6380px;
+	margin: 0 auto;
+	Font-size:50%;
+	background-color:#F9E2E2;
+}
+.pictureOne{
+	margin: 0 auto;
+	width: 100%;
+	height:1000px;
+	background: url(  ../img/女性力量首图.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+h1{
+	text-align: center;
+	font-size: 26px;
+	
+}
+
+.firstLabel-One{
+	list-style: none;
+	width: 460px;
+	height: 120px;
+	background-color: #a81d22;
+	border-radius: 0 0 70px 70px;
+	font-family: "华文新魏";
+	text-align: center;
+	font-size: 100px;
+	margin: 0 auto;
+	top:-16px;
+	left: 480px;
+	margin-top: 80px;
+}
+.ability{position: relative;
+	top:8px;
+	color: white;
+}
+.topText{
+	font-family: "方正粗黑宋简体";
+	font-size:40px;
+	width:70%;
+	line-height: 55px;
+	letter-spacing: 10px;
+	margin:0 auto;
+	margin-top: -200px;
+	margin-bottom: 10px;
+	color: #FFFFFF;
+	padding: 20px 20px 20px 20px;
+	background-color: #3C3B3B;
+	opacity:0.2;
+	text-indent: 2em;
+}
+
+.textOne{
+	font-family: "华文楷体";
+	font-size:25px;
+	width:70%;
+	line-height: 26px;
+	letter-spacing: 4px;
+	margin:0 auto;
+	color: #000000;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	text-indent: 2em;
+}
+
+.photo{
+	margin: auto;
+	width: 100%;
+	background: url( ../img/图一.png);
+	height:720px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+.firstLabel{
+	list-style: none;
+	width: 460px;
+	height: 120px;
+	background-color: #f95c12;
+	border-radius: 0 0 70px 70px;
+	font-family: "华文新魏";
+	text-align: center;
+	font-size: 100px;
+	margin: 0 auto;
+	top:-16px;
+}
+.ability{margin: 0 auto;
+	top:8px;
+	color: white;
+}
+.chart{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	
+}
+h2{
+	text-align: center;
+}
+p{
+	font-family: "华文楷体";
+	width: 70%;
+	font-size: 25px;
+	text-indent: 2em;
+	line-height: 2rem;
+	letter-spacing: 4px;
+	margin:0 auto;
+	padding-top: 30px;
+	
+}
+.secondLabel{
+	list-style: none;
+	width: 720px;
+	height: 120px;
+	background-color: #f95c12;
+	border-radius: 0 0 70px 70px;
+	font-family: "华文新魏";
+	text-align: center;
+	font-size: 100px;
+	margin: 0 auto;
+	top:10px;
+	left: 350px;
+}
+.pictureTwo{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.chartTwo{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	
+}
+
+/*第三部分*/
+.photoThree{
+	margin: auto;
+	width: 100%;
+	background: url( ../img/女性形象.png);
+	height:720px;
+	background-size:auto;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+.firstLabel-Two{
+	list-style: none;
+	width: 600px;
+	height: 120px;
+	background-color: #e49d41;
+	border-radius: 0 0 70px 70px;
+	font-family: "华文新魏";
+	text-align: center;
+	font-size: 60px;
+	margin: 0 auto;
+	top:-16px;
+	left: 480px;
+}
+.abilityOne{position: relative;
+	top:25px;
+	color: white;
+}
+
+h2{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+}
+p{
+	font-family: "华文楷体";
+	width: 70%;
+	font-size: 25px;
+	text-indent: 2em;
+	line-height: 2rem;
+	letter-spacing: 4px;
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+.secondLabel{
+	list-style: none;
+	width: 720px;
+	height: 120px;
+	background-color: #f95c12;
+	border-radius: 0 0 70px 70px;
+	font-family: "华文新魏";
+	text-align: center;
+	font-size: 100px;
+	margin: 0 auto;
+	top:10px;
+	left: 350px;
+}
+.picture{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.chartThree{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	top:100px;
+}
+.textTwo{
+	padding-top: 150px;
+}
+.box{width:80%;
+    height:600px;
+	margin: 0 auto;
+}
+.chart-qunzhuang{width: 40%;
+	height: 300px;
+	left:130px;
+} 
+.chart-kongjian{width:40%;
+	height: 300px;
+	top:-300px;
+	left:480px;
+	
+}
+.chart-nianling{right:20px;
+	width: 40%;
+	height: 300px;
+	top:-300px;
+	
+} 
+.chart-biaoqing{width: 40%;
+	height: 300px;
+	top:-600px;
+	left:300px;
+	
+} 
+.chart-shenfen{width: 40%;
+	height: 300px;
+	top:-900px;
+	left:600px;
+	
+} 
+.textThree{
+	padding-top: 100px;
+}
+.textFour{
+	margin-top: 10px;
+}
+
+.textFive{
+	padding-top: 50px;
+}
+.footer{
+	background-color: #BAA3A4;
+	width: 100%;
+	height: 130px;
+	font-family: "华文楷体";
+	font-size: 28px;
+	line-height: 2rem;
+	letter-spacing: 4px;
+	margin:0 auto;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	
+}
